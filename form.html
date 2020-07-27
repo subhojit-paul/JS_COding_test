@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=0, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
 <body>
@@ -16,31 +17,32 @@
     <div class="form-group">
         <label for="uname">Username</label>
         <input type="text" class="form-control" id="uname" placeholder="Enter Username" required>
-        <div></div>
+        <div id="name_e"></div>
        
       </div>
 
       <div class="form-group">
         <label for="email">Email address</label>
         <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email" required>
-        <div></div>
+        <div id="err_email"></div>
         
       </div>
       <div class="form-group">
         <label for="pass">Password</label>
         <input type="password" class="form-control" id="pass" placeholder="Enter Password" required>
-        <div></div>
+        <div id="e-pass"></div>
         
       </div>
       <div class="form-group">
         <label for="cpass">Confirm Password</label>
         <input type="password" class="form-control" id="cpass"  placeholder="Enter Password again" required>
-        <div></div>
-        
+      
+        <div id="e_c"></div>
       </div>
 
-    <button class="btn btn-primary btn-md btn-block" id="btnsubmit" >SUBMIT</button>
+    <button class="btn btn-primary btn-md btn-block" id="btnsubmit" onclick="onBtnClick()">SUBMIT</button>
     </form>
+    
     <script src="js/validation.js"></script>
     
 </body>
